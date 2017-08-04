@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- title TextView padding  -->
+    <dimen name="padding_title">8dp</dimen>
+
+    <!-- voteaverage TextView padding  -->
+    <dimen name="padding_voteaverage">8dp</dimen>
+    <dimen name="paddingleft_voteaverage">64dp</dimen>
+    <dimen name="paddingbottom_voteaverage">8dp</dimen>
+
+    <!-- releasedate TextView padding  -->
+    <dimen name="paddingleft_releasedate">64dp</dimen>
+    <dimen name="paddingbottom_releasedate">8dp</dimen>
+    <dimen name="margintop_releasedate">32dp</dimen>
+
+    <!-- synopsisheading TextView padding  -->
+    <dimen name="padding_synopsisheading">8dp</dimen>
+
+    <!-- synopsisheading TextView padding  -->
+    <dimen name="marginleft_button">32dp</dimen>
+
+    <!-- synopsis TextView padding  -->
+    <dimen name="padding_synopsis">8dp</dimen>
+
+    <!-- addtoFav Button padding  -->
+    <dimen name="padding_button">8dp</dimen>
+
+    <!-- trailers TextView padding  -->
+    <dimen name="padding_trailersheader">8dp</dimen>
+    <dimen name="padding_trailers">8dp</dimen>
+
+    <dimen name="height_horizontaldivider">1dp</dimen>
+
+    <!-- reviews TextView padding  -->
+    <dimen name="padding_reviewsheader">8dp</dimen>
+    <dimen name="padding_reviews">8dp</dimen>
+
+    <!-- trailers ImageView padding  -->
+    <dimen name="padding_trailerlistitem">8dp</dimen>
+
+</resources>

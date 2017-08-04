@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_Title"
+        style="@style/CodeFont.MovieTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_title"
+        tools:text="@string/tooltexttitle" />
+
+    <LinearLayout
+        android:id="@+id/imageandrelatedtext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_Title"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_Poster"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_ReleaseDate"
+                style="@style/CodeFont.ReleaseDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margintop_releasedate"
+                android:paddingBottom="@dimen/paddingbottom_releasedate"
+                android:paddingLeft="@dimen/paddingleft_releasedate"
+                tools:text="R.string.tooltextreleasedate" />
+
+            <TextView
+                android:id="@+id/tv_VoteAverage"
+                style="@style/CodeFont.VoterRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/paddingbottom_voteaverage"
+                android:paddingLeft="@dimen/paddingleft_voteaverage"
+                tools:text="@string/tooltextvoteaverage" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/marginleft_button"
+                android:padding="@dimen/padding_button"
+                style="@style/CodeFont.FavoriteButton"
+                android:text="@string/savebuttontext"
+                android:id="@+id/btn_SaveToFav"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_synopsis"
+        style="@style/CodeFont.Synopsis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageandrelatedtext"
+        android:layout_alignParentLeft="true"
+        android:padding="@dimen/padding_synopsis"
+        tools:text="@string/tooltextsamplesynopsis" />
+
+</RelativeLayout>

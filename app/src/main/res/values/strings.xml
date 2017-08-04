@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">Movies</string>
+
+    <string name="MyAPIKey"></string>
+
+    <string name="menuitem_popular">Popular</string>
+    <string name="menuitem_toprated">Top Rated</string>
+    <string name="menuitem_myfavs">My Favs</string>
+    <string name="error">Trouble pulling down the movies list. Please make sure you have network
+            connectivity"</string>
+
+    <string name="ratings">Voter Ratings: %1$s</string>
+    <string name="releasedate">Released: %1$s</string>
+
+    <string name="synopsisheading">Plot Synopsis</string>
+
+    <string name="baseURL">"http://api.themoviedb.org/3/movie/"</string>
+    <string name="baseImageURL">"http://image.tmdb.org/t/p/"</string>
+    <string name="IMAGE_SIZE_w185">w185/</string>
+    <string name="IMAGE_SIZE_w342">w342/</string>
+    <string name="IMAGE_SIZE_w500">w500/</string>
+    <string name="IMAGE_SIZE_w780">w780</string>
+
+
+    <string name="sort_popular">popular</string>
+    <string name="sort_toprated">top_rated</string>
+
+    <string name="sort_userselection">UserSelection</string>
+
+    <string name="MovieDetail">"MovieDetail"</string>
+    <string name="MainActivity">"Main Activity"</string>
+
+    <string name="UserSelection">UserSelection</string>
+
+    <string name="votermaxscore">"/10"</string>
+
+    <string name="savebuttontext">"Save as favorite"</string>
+
+    <string name="btntextAddedToFavs">"Favorite"</string>
+
+    <string name="action_myfavs">"My favorites"</string>
+
+    <string name="trailersheading">"Movie Trailers"</string>
+
+    <string name="reviewsheading">"Movie Reviews"</string>
+
+    <string name="mimetype">"text/plain"</string>
+
+    <string name="choosertitle">"Want to see "</string>
+    <string name="questionmark">"?"</string>
+
+    <string name="alert_favmovieyesno">" is already a favorite. Do you want to delete it from your favorites list?"</string>
+    <string name="alert_yestext">"Yes"</string>
+    <string name="alert_notext">"No"</string>
+
+    <string name="movieaddedmsg">" has been added to your favorites list"</string>
+    <string name="movieadeletedmsg">" has been deleted from your favorites list"</string>
+    <string name="moviecouldnoteletemsg">" could not be deleted from your favorites list"</string>
+
+    <string name="nofavsselected">"You have no favorites selected"</string>
+
+    <string name="movieTrailerUrl">"https://www.youtube.com/watch?v="</string>
+
+    <string name="tooltexttitle">"FIFTY SHADES DARKER"</string>
+    <string name="tooltextreleasedate">"2017"</string>
+    <string name="tooltextvoteaverage">"6.6/10"</string>
+    <string name="tooltextsamplesynopsis">"A long synopsis will go here..."</string>
+
+</resources>

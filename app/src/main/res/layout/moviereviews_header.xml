@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/vw_horizontaldivider"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height_horizontaldivider"
+        android:background="@android:color/black"
+        />
+
+    <TextView
+        android:id="@+id/tv_ReviewHeading"
+        style="@style/CodeFont.MovieReviewHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_reviewsheader"
+        android:text="@string/reviewsheading"
+        tools:text="Trailers" />
+
+</LinearLayout>

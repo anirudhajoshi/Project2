@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <!--
+        The scroll position is not maintained when using Glide. The ImageView is collapsing on rotation since the height is set to wrap_content so the position is
+        lost when this happen. Setting a fixed height for the ImageView in the list item layout makes it function
+        more smoothly but the UI does not show properly.
+    -->
+    <ImageView
+        android:id="@+id/movie_list_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        />
+
+</RelativeLayout>
