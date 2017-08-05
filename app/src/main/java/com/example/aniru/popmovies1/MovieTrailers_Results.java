@@ -1,5 +1,8 @@
 package com.example.aniru.popmovies1;
 
+import android.os.Parcel;
+import android.os.Parcelable;
+
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
@@ -7,7 +10,7 @@ import com.google.gson.annotations.SerializedName;
  * Created by aniru on 7/21/2017.
  */
 
-public class MovieTrailers_Results {
+public class MovieTrailers_Results implements Parcelable {
     @SerializedName("id")
     @Expose
     private String id;
@@ -95,5 +98,40 @@ public class MovieTrailers_Results {
 
     public void setType(String type) {
         this.type = type;
+    }
+
+    public MovieTrailers_Results() {}
+
+    protected MovieTrailers_Results(Parcel in) {
+        //retrieve
+        setId(in.readString());
+        setKey(in.readString());
+        setName(in.readString());
+        setId( in.readString() );
+        setSize(in.readInt());
+    }
+
+    public static final Parcelable.Creator<MovieTrailers_Results> CREATOR =
+            new Parcelable.Creator<MovieTrailers_Results>() {
+                public MovieTrailers_Results createFromParcel(Parcel source) {
+                    return new MovieTrailers_Results(source);
+                }
+
+                public MovieTrailers_Results[] newArray(int size) {
+                    return new MovieTrailers_Results[size];
+                }
+            };
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeString(getId());
+        dest.writeString(getKey());
+        dest.writeString(getName());
+        dest.writeInt(getSize());
     }
 }

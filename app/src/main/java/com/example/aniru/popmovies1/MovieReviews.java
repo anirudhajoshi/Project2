@@ -23,7 +23,7 @@ public class MovieReviews implements Parcelable {
     private Integer page;
     @SerializedName("results")
     @Expose
-    private ArrayList<MovieReviews_Results> results = null;
+    public ArrayList<MovieReviews_Results> results = null;
     @SerializedName("total_pages")
     @Expose
     private Integer totalPages;
@@ -75,8 +75,8 @@ public class MovieReviews implements Parcelable {
 
     protected MovieReviews(Parcel in) {
         //retrieve
-        ArrayList reviews = new ArrayList<MovieReviews>();
-        reviews = in.readArrayList(MovieReviews.class.getClassLoader());
+        ArrayList trailers = new ArrayList<MovieReviews>();
+        trailers = in.readArrayList(MovieReviews.class.getClassLoader());
     }
 
     public static final Parcelable.Creator<MovieReviews> CREATOR =
